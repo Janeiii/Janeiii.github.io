@@ -1,0 +1,98 @@
+/* styles.css */
+/* Additional styles for the cover page */
+#cover {
+    background-image: url('your-cover-image.jpg'); /* Replace 'your-cover-image.jpg' with the path to your cover image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+#cover h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#cover p {
+    font-size: 1.2em;
+}
+
+/* Reset default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #d9a9d0;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+/* Section styles */
+section {
+    padding: 20px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+/* Footer styles */
+footer {
+    background-color: #d9a9d0;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional: Add border radius to images */
+    margin-bottom: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        margin: 10px 0;
+    }
+}
