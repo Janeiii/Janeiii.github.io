@@ -8,4 +8,13 @@
                 });
             });
         });
-    </script>
+
+        // Add click event listeners to bubbles
+        document.querySelectorAll('.bubble').forEach(bubble => {
+        bubble.addEventListener('click', () => {
+            // Redirect to project page when bubble is clicked
+            window.location.href = bubble.querySelector('a').getAttribute('href');
+        });
+        });
+
+</script>
