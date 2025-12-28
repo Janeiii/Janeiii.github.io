@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Janet Lin's Portfolio</title>
+    <title>Mission Control - Janet Lin | Data Engineer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css" />
 
 </head>
 <body>
+    <div class="stars-background" id="stars-background"></div>
     <nav id="desktop-nav">
-      <div class="logo">Janet Lin</div>
+      <div class="logo">MISSION CONTROL</div>
       <div>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#awards">Award</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#telemetry">TELEMETRY</a></li>
+          <li><a href="#trajectory">TRAJECTORY</a></li>
+          <li><a href="#orbit">ORBIT</a></li>
+          <li><a href="#re-entry">RE-ENTRY</a></li>
         </ul>
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">Janet Lin</div>
+      <div class="logo">MISSION CONTROL</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -30,11 +30,10 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#awards" onclick="toggleMenu()">Award</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="#telemetry" onclick="toggleMenu()">TELEMETRY</a></li>
+          <li><a href="#trajectory" onclick="toggleMenu()">TRAJECTORY</a></li>
+          <li><a href="#orbit" onclick="toggleMenu()">ORBIT</a></li>
+          <li><a href="#re-entry" onclick="toggleMenu()">RE-ENTRY</a></li>
         </div>
       </div>
     </nav>
@@ -43,12 +42,29 @@
         <img src="./assets/profile.jpg" alt="Janet Lin profile picture" />
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Janet Lin</h1>
-        <p class="section__text__p2">Data Engineer <br>
-          Software Enginner <br>
-          Goal-Achiever <br>
+        <p class="section__text__p1">MISSION COMMANDER</p>
+        <h1 class="title">JANET LIN</h1>
+        <p class="section__text__p2">Data Engineer: Building Scalable Pipelines<br>
+          for the Multi-Planetary Future<br>
         </p>
+        <div class="launch-counter">
+          <div class="launch-counter-item">
+            <span class="launch-counter-label">Years of Experience</span>
+            <span class="launch-counter-value" id="experience-count">0</span>
+          </div>
+          <div class="launch-counter-item">
+            <span class="launch-counter-label">Pipelines Deployed</span>
+            <span class="launch-counter-value" id="pipelines-count">0</span>
+          </div>
+          <div class="launch-counter-item">
+            <span class="launch-counter-label">Team Members Led</span>
+            <span class="launch-counter-value" id="team-count">0</span>
+          </div>
+          <div class="launch-counter-item">
+            <span class="launch-counter-label">360 Turns Conducted</span>
+            <span class="launch-counter-value" id="turns-count">0</span>
+          </div>
+        </div>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
@@ -56,8 +72,8 @@
           >
             Download CV
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
+          <button class="btn btn-color-1" onclick="location.href='./#re-entry'">
+            Transmit Message
           </button>
         </div>
         <div id="socials-container">
@@ -82,9 +98,9 @@
         </div>
       </div>
     </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
+    <section id="telemetry">
+      <p class="section__text__p1">SYSTEMS CHECK</p>
+      <h1 class="title">TELEMETRY</h1>
       <div class="section-container">
         <div class="section__pic-container">
           <img
@@ -101,11 +117,31 @@
                 alt="Experience icon"
                 class="icon"
               />
-              <h3>Experience</h3>
-              <p>4+ years Software Engineering<br><br />
-                3+ years Professional Administrative Data Management <br><br/>
-                2+ years Professional Data Engineering <br>
-
+              <h3>Programming & Systems</h3>
+              <p>Python • SQL • PostgreSQL<br>
+                Linux • Git • Docker
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Data Engineering</h3>
+              <p>ETL Pipelines • Spark • Kafka<br>
+                Monitoring Systems • Airflow
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="ML icon"
+                class="icon"
+              />
+              <h3>Machine Learning</h3>
+              <p>Time Series • Forecasting<br>
+                Anomaly Detection • Classification
               </p>
             </div>
             <div class="details-container">
@@ -115,19 +151,18 @@
                 class="icon"
               />
               <h3>Education</h3>
-              <p>B.S in Data Science<br />
-              & <br>
-              CIS - Programming in C/C++ Certificate
-            </p>
-
+              <p>B.S. Data Science, UC San Diego<br>
+                (Sept 2021 - Jun 2023)<br>
+                CIS Programming Certificate
+              </p>
             </div>
           </div>
           
           <div class="text-container">
             <p>
-                My name is Janet. I recently graduated from the University of California, San Diego with a Bachelor of Science degree in Data Science, 
-                I also studied computer science as my major back in 2020. 
-                What my resume won’t tell you is that I prefer to call myself a problem explorer. I love to navigate problems that I have to draw the map for. 
+                As a System Engineer at Supermicro, I build robust, scalable data pipelines and monitoring systems that handle mission-critical operations—similar to the telemetry systems powering SpaceX's rocket launches. 
+                Inspired by SpaceX's rapid iteration and mission-driven approach, I've developed fault-tolerant ETL pipelines that process massive streaming data, automated anomaly detection systems that reduce manual analysis by 90%, and led cross-functional teams of 10+ engineers to deliver production-ready solutions. 
+                My passion lies in building systems that thrive under pressure, just like the data infrastructure supporting humanity's journey to becoming multi-planetary.
             </p>
           </div>
         </div>
@@ -136,394 +171,152 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#experience'"
+        onclick="location.href='./#trajectory'"
       />
     </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
+    <section id="trajectory">
+      <p class="section__text__p1">FLIGHT PATH</p>
+      <h1 class="title">TRAJECTORY</h1>
       <div class="experience-details-container">
-        <div class="about-containers">
-        <div class="details-container">
-            <h2 class="experience-sub-title">Data Science</h2>
-            <div class="article-container">
-                <article>
-                <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                />
-                <div>
-                    <h3>Regression</h3>
-                    <p>Proficient</p>
-                </div>
-                </article>
-                <article>
-                <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                />
-                <div>
-                    <h3>Clustering</h3>
-                    <p>Proficient</p>
-                </div>
-                </article>
-                <article>
-                <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                />
-                <div>
-                    <h3>Classification</h3>
-                    <p>Proficient</p>
-                </div>
-                </article>
-                <article>
-                <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                />
-                <div>
-                    <h3>Database Management</h3>
-                    <p>Intermediate</p>
-                </div>
-                </article>
-                <article>
-                <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                />
-                <div>
-                    <h3>Data Mining</h3>
-                    <p>Intermediate</p>
-                </div>
-                </article>
-                <article>
-                <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                />
-                <div>
-                    <h3>A/B Testing</h3>
-                    <p>Intermediate</p>
-                </div>
-                </article>
-            </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h2 class="experience-sub-title">STAGE 1 - MAIN STAGE</h2>
+            <h3>System Engineer | Supermicro - San Jose, CA</h3>
+            <p style="color: #E31937; margin: 0.5rem 0;">Jan 2025 - Current</p>
+            <ul style="text-align: left; margin-top: 1rem; list-style: none; padding: 0;">
+              <li style="margin: 0.5rem 0;">✓ Built and deployed high-visibility dashboards and end-to-end data pipelines using Python and SQL</li>
+              <li style="margin: 0.5rem 0;">✓ Developed automated monitoring and anomaly-detection systems, reducing manual analysis by ~90%</li>
+              <li style="margin: 0.5rem 0;">✓ Applied ensemble learning for ticket classification and regression analysis</li>
+              <li style="margin: 0.5rem 0;">✓ Designed forecasting models for ticket demand prediction</li>
+              <li style="margin: 0.5rem 0;">✓ Led cross-functional team of 10+ engineers and analysts</li>
+            </ul>
           </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>D3</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Tibco Spotfire</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Data Visualization</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
+          <div class="timeline-item">
+            <h2 class="experience-sub-title">STAGE 2 - BOOSTER</h2>
+            <h3>Data Science Intern | ASML - San Diego, CA</h3>
+            <p style="color: #E31937; margin: 0.5rem 0;">Jun 2022 - Sept 2022</p>
+            <ul style="text-align: left; margin-top: 1rem; list-style: none; padding: 0;">
+              <li style="margin: 0.5rem 0;">✓ Built automated end-to-end data pipelines for high-frequency laser system data</li>
+              <li style="margin: 0.5rem 0;">✓ Developed analytics and interactive dashboards using TIBCO Spotfire</li>
+              <li style="margin: 0.5rem 0;">✓ Optimized data processing workflows in Python</li>
+              <li style="margin: 0.5rem 0;">✓ Collaborated with systems, hardware, and manufacturing engineers</li>
+            </ul>
           </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Programming Language</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C++</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Linux</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>ROS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              
-            </div>
+          <div class="timeline-item">
+            <h2 class="experience-sub-title">MISSION MILESTONES</h2>
+            <h3>Certifications</h3>
+            <ul style="text-align: left; margin-top: 1rem; list-style: none; padding: 0;">
+              <li style="margin: 0.5rem 0;">✓ Meta Data Analyst Professional Certificate (Sept 2024)</li>
+              <li style="margin: 0.5rem 0;">✓ CIS Programming in C/C++ Certificate (May 2021)</li>
+            </ul>
           </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Languages</h2>
-            <div class="article-container">
-                <article>
-                <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                />
-                <div>
-                    <h3>English</h3>
-                    <p>Fluent</p>
-                </div>
-                </article>
-                <article>
-                <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                />
-                <div>
-                    <h3>Cantonese</h3>
-                    <p>Fluent</p>
-                </div>
-                </article>
-                <article>
-                <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                />
-                <div>
-                    <h3>Mandarin</h3>
-                    <p>Fluent</p>
-                </div>
-                </article>
-                <article>
-                <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                />
-                <div>
-                    <h3>Korean</h3>
-                    <p>Advanced</p>
-                </div>
-                </article>
-                </div>
-            </div>
         </div>
       </div>
       <img
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#projects'"
+        onclick="location.href='./#orbit'"
       />
     </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
+    <section id="orbit">
+      <p class="section__text__p1">MISSION PROJECTS</p>
+      <h1 class="title">ORBIT</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <div class="details-container color-container">
+          <div class="details-container color-container rocket-trail">
             <div class="article-container">
               <img
                 src="./assets/project-1.jpg"
-                alt="Project 1"
+                alt="Starship Launch Data Pipeline"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Triton AI Autonomous Racing Kart</h2>
+            <h2 class="experience-sub-title project-title">Starship Launch Data Pipeline</h2>
+            <p style="text-align: left; margin: 1rem; opacity: 0.9;">
+              End-to-end data pipeline for processing SpaceX launch telemetry data. Built with Kafka for real-time ingestion, Spark for processing, and Airflow for orchestration. Handles 1M+ events/sec with 99.9% reliability.
+            </p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Janeiii/UCSD-HDSI-Autonomous-SP-2023'"
+                onclick="location.href='#'"
               >
-                Github
+                GitHub
               </button>
               <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/aashishbhole/evgokart-slam/raw/main/media/demo.gif'"
+                class="btn btn-color-1 project-btn"
+                onclick="location.href='#'"
               >
                 Live Demo
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
+          <div class="details-container color-container rocket-trail">
             <div class="article-container">
               <img
                 src="./assets/project-2.jpg"
-                alt="Project 2"
+                alt="Lidar-Based System Monitoring"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Stock Market Data Modeling</h2>
+            <h2 class="experience-sub-title project-title">Lidar-Based System Monitoring & Classification Pipeline</h2>
+            <p style="text-align: left; margin: 1rem; opacity: 0.9;">
+              End-to-end data pipeline using ROS and Python for real-time ingestion, processing, and storage of high-frequency point-cloud sensor data. Developed clustering and classification algorithms with statistical validation. Containerized with Docker for scalable deployment.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Janeiii'"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-1 project-btn"
+                onclick="location.href='#'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container rocket-trail">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.jpg"
+                alt="Time-Series Forecasting"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Time-Series Forecasting & Trend Detection</h2>
+            <p style="text-align: left; margin: 1rem; opacity: 0.9;">
+              Predictive time-series models for S&P 500 market behavior using regression baselines and LSTM architectures. Designed feature engineering and validation workflows with interactive data-driven visualizations for trend analysis and forecast outputs.
+            </p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/Janeiii/datahacks-2021'"
               >
-                Github
+                GitHub
               </button>
               <button
-                class="btn btn-color-2 project-btn"
+                class="btn btn-color-1 project-btn"
                 onclick="location.href='https://yu-lily.github.io/datahacks-2021-report/'"
               >
                 Live Demo
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.jpg"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Full Stack IOS App Development - Instagram </h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Janeiii/Codepath---Parstagram'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Janeiii/Codepath---Parstagram'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          
         </div>
       </div>
       <img
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#awards'"
+        onclick="location.href='./#re-entry'"
       />
     </section>
-    <section id = "awards">
-        <h1 class="title">Awards Earned</h1>
-        <div class="about-details-container">
-            <div class="about-containers">
-              <div class="details-container">
-                <img
-                  src="./assets/experience.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <h3>UCSD DataHack Advance Track Winning Project<br /> 2023 Purdue University Autonomous Racing Kart Participation Award</h3>
-    </section>
-    <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
+    <section id="re-entry">
+      <p class="section__text__p1">ESTABLISH CONNECTION</p>
+      <h1 class="title">RE-ENTRY</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
@@ -531,7 +324,7 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:janetlinw@gmail.com">janetlinw@gmail.com</a></p>
+          <p><a href="mailto:janetlinw@gmail.com">DOCKING PORT: janetlinw@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
           <img
@@ -539,7 +332,15 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          <p><a href="https://www.linkedin.com/in/janet-lin-23508b171">DOCKING PORT: LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/github.png"
+            alt="GitHub icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://github.com/Janeiii">DOCKING PORT: GitHub</a></p>
         </div>
       </div>
     </section>
@@ -547,15 +348,14 @@
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#awards">Award</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#telemetry">TELEMETRY</a></li>
+            <li><a href="#trajectory">TRAJECTORY</a></li>
+            <li><a href="#orbit">ORBIT</a></li>
+            <li><a href="#re-entry">RE-ENTRY</a></li>
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2024 Janet Lin. All Rights Reserved.</p>
+      <p>Copyright &#169; 2025 Mission Commander Janet Lin. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
   </body>
