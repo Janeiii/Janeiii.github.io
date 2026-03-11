@@ -1,362 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mission Control - Janet Lin | Data Engineer</title>
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/mediaqueries.css" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Data Engineer & Problem Solver</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="stars-background" id="stars-background"></div>
-    <nav id="desktop-nav">
-      <div class="logo">MISSION CONTROL</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#telemetry">TELEMETRY</a></li>
-          <li><a href="#trajectory">TRAJECTORY</a></li>
-          <li><a href="#orbit">ORBIT</a></li>
-          <li><a href="#re-entry">RE-ENTRY</a></li>
-        </ul>
-      </div>
+  <!-- Floral background: 4 flowers + floating petals & leaves -->
+  <div class="floral-bg" aria-hidden="true">
+    <span class="bg-flower"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="4" fill="var(--blush)"/><ellipse cx="24" cy="14" rx="5" ry="8" fill="var(--lavender)" opacity="0.9"/><ellipse cx="24" cy="14" rx="5" ry="8" fill="var(--lavender)" opacity="0.9" transform="rotate(72 24 24)"/><ellipse cx="24" cy="14" rx="5" ry="8" fill="var(--lavender)" opacity="0.9" transform="rotate(144 24 24)"/><ellipse cx="24" cy="14" rx="5" ry="8" fill="var(--lavender)" opacity="0.9" transform="rotate(216 24 24)"/><ellipse cx="24" cy="14" rx="5" ry="8" fill="var(--lavender)" opacity="0.9" transform="rotate(288 24 24)"/></svg></span>
+    <span class="bg-flower"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="4" fill="var(--blush)"/><ellipse cx="24" cy="14" rx="5" ry="8" fill="var(--lavender)" opacity="0.9"/><ellipse cx="24" cy="14" rx="5" ry="8" fill="var(--lavender)" opacity="0.9" transform="rotate(72 24 24)"/><ellipse cx="24" cy="14" rx="5" ry="8" fill="var(--lavender)" opacity="0.9" transform="rotate(144 24 24)"/><ellipse cx="24" cy="14" rx="5" ry="8" fill="var(--lavender)" opacity="0.9" transform="rotate(216 24 24)"/><ellipse cx="24" cy="14" rx="5" ry="8" fill="var(--lavender)" opacity="0.9" transform="rotate(288 24 24)"/></svg></span>
+    <span class="bg-flower"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="4" fill="var(--blush)"/><ellipse cx="24" cy="14" rx="5" ry="8" fill="var(--lavender)" opacity="0.9"/><ellipse cx="24" cy="14" rx="5" ry="8" fill="var(--lavender)" opacity="0.9" transform="rotate(72 24 24)"/><ellipse cx="24" cy="14" rx="5" ry="8" fill="var(--lavender)" opacity="0.9" transform="rotate(144 24 24)"/><ellipse cx="24" cy="14" rx="5" ry="8" fill="var(--lavender)" opacity="0.9" transform="rotate(216 24 24)"/><ellipse cx="24" cy="14" rx="5" ry="8" fill="var(--lavender)" opacity="0.9" transform="rotate(288 24 24)"/></svg></span>
+    <span class="bg-flower"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="4" fill="var(--blush)"/><ellipse cx="24" cy="14" rx="5" ry="8" fill="var(--lavender)" opacity="0.9"/><ellipse cx="24" cy="14" rx="5" ry="8" fill="var(--lavender)" opacity="0.9" transform="rotate(72 24 24)"/><ellipse cx="24" cy="14" rx="5" ry="8" fill="var(--lavender)" opacity="0.9" transform="rotate(144 24 24)"/><ellipse cx="24" cy="14" rx="5" ry="8" fill="var(--lavender)" opacity="0.9" transform="rotate(216 24 24)"/><ellipse cx="24" cy="14" rx="5" ry="8" fill="var(--lavender)" opacity="0.9" transform="rotate(288 24 24)"/></svg></span>
+    <span class="float-petal float-petal-1"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2c2 4 4 8 4 10s-2 6-4 10c-2-4-4-8-4-10s2-6 4-10z" fill="currentColor" opacity="0.6"/></svg></span>
+    <span class="float-petal float-petal-2"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="12" cy="12" rx="4" ry="8" fill="currentColor" opacity="0.5" transform="rotate(-30 12 12)"/></svg></span>
+    <span class="float-petal float-petal-3"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 4l-2 8 2 8 2-8-2-8z" fill="currentColor" opacity="0.5"/></svg></span>
+    <span class="float-leaf float-leaf-1"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 12c4-6 10-8 16-4-2 6-6 10-12 10S4 16 4 12z" fill="currentColor" opacity="0.4"/></svg></span>
+    <span class="float-leaf float-leaf-2"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 12c-4-6-10-8-16-4 2 6 6 10 12 10s8-6 4-6z" fill="currentColor" opacity="0.4"/></svg></span>
+  </div>
+
+  <header class="site-header">
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">MISSION CONTROL</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#telemetry" onclick="toggleMenu()">TELEMETRY</a></li>
-          <li><a href="#trajectory" onclick="toggleMenu()">TRAJECTORY</a></li>
-          <li><a href="#orbit" onclick="toggleMenu()">ORBIT</a></li>
-          <li><a href="#re-entry" onclick="toggleMenu()">RE-ENTRY</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="/assets/profile.jpg" alt="Janet Lin profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">MISSION COMMANDER</p>
-        <h1 class="title">JANET LIN</h1>
-        <p class="section__text__p2">Data Engineer: Building Scalable Pipelines<br>
-          for the Multi-Planetary Future<br>
-        </p>
-        <div class="launch-counter">
-          <div class="launch-counter-item">
-            <span class="launch-counter-label">Years of Experience</span>
-            <span class="launch-counter-value" id="experience-count">0</span>
-          </div>
-          <div class="launch-counter-item">
-            <span class="launch-counter-label">Pipelines Deployed</span>
-            <span class="launch-counter-value" id="pipelines-count">0</span>
-          </div>
-          <div class="launch-counter-item">
-            <span class="launch-counter-label">Team Members Led</span>
-            <span class="launch-counter-value" id="team-count">0</span>
-          </div>
-          <div class="launch-counter-item">
-            <span class="launch-counter-label">360 Turns Conducted</span>
-            <span class="launch-counter-value" id="turns-count">0</span>
-          </div>
-        </div>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('/assets/Lin,resume.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='/#re-entry'">
-            Transmit Message
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="/assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/janet-lin-23508b171'"
-          />
-          <img
-            src="/assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/Janeiii'"
-          />
-          <img
-            src="/assets/medium-icon.png"
-            alt="My Medium profile"
-            class="icon"
-            onclick="location.href='https://medium.com/@janetlinw'"
-          />
-        </div>
+  </header>
+
+  <main>
+    <section class="hero section animate-in">
+      <h1 class="hero-title">Xiaoying Janet Lin</h1>
+      <p class="hero-tagline">Data engineer & problem solver</p>
+    </section>
+
+    <section id="about" class="about section animate-in">
+      <h2 class="section-label">About →</h2>
+      <div class="card card-bloom">
+        <p class="placeholder-text">Data Engineer passionate about building reliable, high-throughput data systems that power mission-critical decisions at scale. I design and operate end-to-end data lifecycles—from raw ingestion and streaming pipelines to automated transformation, analytics, and production-grade dashboards. My background spans data engineering, machine learning modeling, full-stack development, DevOps, and cross-functional project leadership. I'm looking for opportunities to grow and contribute in the data engineering space.</p>
       </div>
     </section>
-    <section id="telemetry">
-      <p class="section__text__p1">SYSTEMS CHECK</p>
-      <h1 class="title">TELEMETRY</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="/assets/IMG_1057.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="/assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Programming & Systems</h3>
-              <p>Python • SQL • PostgreSQL<br>
-                Linux • Git • Docker
-              </p>
-            </div>
-            <div class="details-container">
-              <img
-                src="/assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Data Engineering</h3>
-              <p>ETL Pipelines • Spark • Kafka<br>
-                Monitoring Systems • Airflow
-              </p>
-            </div>
-            <div class="details-container">
-              <img
-                src="/assets/experience.png"
-                alt="ML icon"
-                class="icon"
-              />
-              <h3>Machine Learning</h3>
-              <p>Time Series • Forecasting<br>
-                Anomaly Detection • Classification
-              </p>
-            </div>
-            <div class="details-container">
-              <img
-                src="/assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.S. Data Science, UC San Diego<br>
-                (Sept 2021 - Jun 2023)<br>
-                CIS Programming Certificate
-              </p>
-            </div>
-          </div>
-          
-          <div class="text-container">
-            <p>
-                As a System Engineer at Supermicro, I build robust, scalable data pipelines and monitoring systems that handle mission-critical operations—similar to the telemetry systems powering SpaceX's rocket launches. 
-                Inspired by SpaceX's rapid iteration and mission-driven approach, I've developed fault-tolerant ETL pipelines that process massive streaming data, automated anomaly detection systems that reduce manual analysis by 90%, and led cross-functional teams of 10+ engineers to deliver production-ready solutions. 
-                My passion lies in building systems that thrive under pressure, just like the data infrastructure supporting humanity's journey to becoming multi-planetary.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="/assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='/#trajectory'"
-      />
-    </section>
-    <section id="trajectory">
-      <p class="section__text__p1">FLIGHT PATH</p>
-      <h1 class="title">TRAJECTORY</h1>
-      <div class="experience-details-container">
-        <div class="timeline">
-          <div class="timeline-item">
-            <h2 class="experience-sub-title">STAGE 1 - MAIN STAGE</h2>
-            <h3>System Engineer | Supermicro - San Jose, CA</h3>
-            <p style="color: #E31937; margin: 0.5rem 0;">Jan 2025 - Current</p>
-            <ul style="text-align: left; margin-top: 1rem; list-style: none; padding: 0;">
-              <li style="margin: 0.5rem 0;">✓ Built and deployed high-visibility dashboards and end-to-end data pipelines using Python and SQL</li>
-              <li style="margin: 0.5rem 0;">✓ Developed automated monitoring and anomaly-detection systems, reducing manual analysis by ~90%</li>
-              <li style="margin: 0.5rem 0;">✓ Applied ensemble learning for ticket classification and regression analysis</li>
-              <li style="margin: 0.5rem 0;">✓ Designed forecasting models for ticket demand prediction</li>
-              <li style="margin: 0.5rem 0;">✓ Led cross-functional team of 10+ engineers and analysts</li>
-            </ul>
-          </div>
-          <div class="timeline-item">
-            <h2 class="experience-sub-title">STAGE 2 - BOOSTER</h2>
-            <h3>Data Science Intern | ASML - San Diego, CA</h3>
-            <p style="color: #E31937; margin: 0.5rem 0;">Jun 2022 - Sept 2022</p>
-            <ul style="text-align: left; margin-top: 1rem; list-style: none; padding: 0;">
-              <li style="margin: 0.5rem 0;">✓ Built automated end-to-end data pipelines for high-frequency laser system data</li>
-              <li style="margin: 0.5rem 0;">✓ Developed analytics and interactive dashboards using TIBCO Spotfire</li>
-              <li style="margin: 0.5rem 0;">✓ Optimized data processing workflows in Python</li>
-              <li style="margin: 0.5rem 0;">✓ Collaborated with systems, hardware, and manufacturing engineers</li>
-            </ul>
-          </div>
-          <div class="timeline-item">
-            <h2 class="experience-sub-title">MISSION MILESTONES</h2>
-            <h3>Certifications</h3>
-            <ul style="text-align: left; margin-top: 1rem; list-style: none; padding: 0;">
-              <li style="margin: 0.5rem 0;">✓ Meta Data Analyst Professional Certificate (Sept 2024)</li>
-              <li style="margin: 0.5rem 0;">✓ CIS Programming in C/C++ Certificate (May 2021)</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <img
-        src="/assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='/#orbit'"
-      />
-    </section>
-    <section id="orbit">
-      <p class="section__text__p1">MISSION PROJECTS</p>
-      <h1 class="title">ORBIT</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container rocket-trail">
-            <div class="article-container">
-              <img
-                src="/assets/project-1.jpg"
-                alt="Starship Launch Data Pipeline"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Starship Launch Data Pipeline</h2>
-            <p style="text-align: left; margin: 1rem; opacity: 0.9;">
-              End-to-end data pipeline for processing SpaceX launch telemetry data. Built with Kafka for real-time ingestion, Spark for processing, and Airflow for orchestration. Handles 1M+ events/sec with 99.9% reliability.
-            </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='#'"
-              >
-                GitHub
-              </button>
-              <button
-                class="btn btn-color-1 project-btn"
-                onclick="location.href='#'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container rocket-trail">
-            <div class="article-container">
-              <img
-                src="/assets/project-2.jpg"
-                alt="Lidar-Based System Monitoring"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Lidar-Based System Monitoring & Classification Pipeline</h2>
-            <p style="text-align: left; margin: 1rem; opacity: 0.9;">
-              End-to-end data pipeline using ROS and Python for real-time ingestion, processing, and storage of high-frequency point-cloud sensor data. Developed clustering and classification algorithms with statistical validation. Containerized with Docker for scalable deployment.
-            </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Janeiii'"
-              >
-                GitHub
-              </button>
-              <button
-                class="btn btn-color-1 project-btn"
-                onclick="location.href='#'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container rocket-trail">
-            <div class="article-container">
-              <img
-                src="/assets/project-3.jpg"
-                alt="Time-Series Forecasting"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Time-Series Forecasting & Trend Detection</h2>
-            <p style="text-align: left; margin: 1rem; opacity: 0.9;">
-              Predictive time-series models for S&P 500 market behavior using regression baselines and LSTM architectures. Designed feature engineering and validation workflows with interactive data-driven visualizations for trend analysis and forecast outputs.
-            </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Janeiii/datahacks-2021'"
-              >
-                GitHub
-              </button>
-              <button
-                class="btn btn-color-1 project-btn"
-                onclick="location.href='https://yu-lily.github.io/datahacks-2021-report/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="/assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='/#re-entry'"
-      />
-    </section>
-    <section id="re-entry">
-      <p class="section__text__p1">ESTABLISH CONNECTION</p>
-      <h1 class="title">RE-ENTRY</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="/assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:janetlinw@gmail.com">DOCKING PORT: janetlinw@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="/assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/janet-lin-23508b171">DOCKING PORT: LinkedIn</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="/assets/github.png"
-            alt="GitHub icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://github.com/Janeiii">DOCKING PORT: GitHub</a></p>
-        </div>
+
+    <section id="skills" class="skills section animate-in">
+      <h2 class="section-label">Skills →</h2>
+      <div class="skills-list">
+        <span class="pill">SQL</span>
+        <span class="pill">Python</span>
+        <span class="pill">ETL</span>
+        <span class="pill">Pipelines</span>
+        <span class="pill">Streaming</span>
+        <span class="pill">Data Modeling</span>
+        <span class="pill">ML</span>
+        <span class="pill">Cloud</span>
+        <span class="pill">DevOps</span>
+        <span class="pill">CI/CD</span>
+        <span class="pill">Dashboards</span>
+        <span class="pill">Project Leadership</span>
       </div>
     </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#telemetry">TELEMETRY</a></li>
-            <li><a href="#trajectory">TRAJECTORY</a></li>
-            <li><a href="#orbit">ORBIT</a></li>
-            <li><a href="#re-entry">RE-ENTRY</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2025 Mission Commander Janet Lin. All Rights Reserved.</p>
-    </footer>
-    <script src="/script.js"></script>
-  </body>
+
+    <section id="experience" class="experience section animate-in">
+      <h2 class="section-label">Experience & Projects →</h2>
+      <div class="card card-bloom">
+        <p class="placeholder-text">Resume and key ideas will go here. Drop in your experience and projects when ready.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section animate-in">
+      <h2 class="section-label">Contact →</h2>
+      <div class="contact-links">
+        <a href="mailto:your@email.com" class="link link-bloom">Email</a>
+        <a href="#" class="link link-bloom">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Made with care</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
